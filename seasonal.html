@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NEONVERSE — This season's hottest anime, updated weekly." />
+  <meta name="theme-color" content="#05050f" />
+  <title>NEONVERSE — Seasonal Anime</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ═══ LOADING SCREEN ═══ -->
+  <div class="loading-screen">
+    <div class="loading-logo">
+      <span>N</span><span>E</span><span>O</span><span>N</span><span>V</span><span>E</span><span>R</span><span>S</span><span>E</span>
+    </div>
+    <div class="loading-spinner"></div>
+    <div class="loading-progress">
+      <div class="loading-progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-logo">NEONVERSE</a>
+      <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="anime.html">Anime</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="seasonal.html" class="active">Seasonal</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <button class="navbar-search" aria-label="Search">🔍</button>
+        <button class="btn-join-hub">JOIN HUB</button>
+      </div>
+      <button class="navbar-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav-overlay">
+    <a href="index.html">Home</a>
+    <a href="anime.html">Anime</a>
+    <a href="games.html">Games</a>
+    <a href="seasonal.html">Seasonal</a>
+    <a href="community.html">Community</a>
+  </div>
+
+  <!-- ═══ PAGE HERO ═══ -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <h1 class="reveal-scale" id="season-title">SEASONAL ANIME</h1>
+      <p id="season-subtitle">This season's hottest releases</p>
+    </div>
+  </section>
+
+  <!-- ═══ SPOTLIGHT CARDS ═══ -->
+  <section class="section" id="spotlight-section" style="padding-bottom: 0;">
+    <div class="container">
+      <div class="spotlight-grid" id="spotlight-grid">
+        <div class="skeleton" style="height: 300px; border-radius: 20px;"></div>
+        <div class="skeleton" style="height: 300px; border-radius: 20px;"></div>
+        <div class="skeleton" style="height: 300px; border-radius: 20px;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SORT OPTIONS ═══ -->
+  <div class="container">
+    <div class="sort-options" id="sort-options">
+      <button class="sort-option active" data-sort="score">By Score</button>
+      <button class="sort-option" data-sort="popularity">By Popularity</button>
+      <button class="sort-option" data-sort="episodes">By Episodes</button>
+    </div>
+  </div>
+
+  <!-- ═══ SEASONAL GRID ═══ -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="anime-grid" id="seasonal-grid">
+        <div class="skeleton skeleton-card" style="height:320px"></div>
+        <div class="skeleton skeleton-card" style="height:320px"></div>
+        <div class="skeleton skeleton-card" style="height:320px"></div>
+        <div class="skeleton skeleton-card" style="height:320px"></div>
+        <div class="skeleton skeleton-card" style="height:320px"></div>
+        <div class="skeleton skeleton-card" style="height:320px"></div>
+        <div class="skeleton skeleton-card" style="height:320px"></div>
+        <div class="skeleton skeleton-card" style="height:320px"></div>
+        <div class="skeleton skeleton-card" style="height:320px"></div>
+        <div class="skeleton skeleton-card" style="height:320px"></div>
+        <div class="skeleton skeleton-card" style="height:320px"></div>
+        <div class="skeleton skeleton-card" style="height:320px"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">NEONVERSE</div>
+          <p>Your ultimate destination for anime and gaming. Join the community and explore infinite worlds.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="anime.html">Anime</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="seasonal.html">Seasonal</a></li>
+            <li><a href="community.html">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon discord" title="Discord">💬</a>
+            <a href="#" class="social-icon twitter" title="Twitter">🐦</a>
+            <a href="#" class="social-icon youtube" title="YouTube">▶️</a>
+            <a href="#" class="social-icon reddit" title="Reddit">🤖</a>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <form class="newsletter-form" onsubmit="event.preventDefault()">
+            <input type="email" placeholder="your@email.com" />
+            <button type="submit">→</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 NEONVERSE. Built with 💜 for the community.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/animations.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const seasonTitle = document.getElementById('season-title');
+      const seasonSubtitle = document.getElementById('season-subtitle');
+      const spotlightGrid = document.getElementById('spotlight-grid');
+      const seasonalGrid = document.getElementById('seasonal-grid');
+      const sortBtns = document.querySelectorAll('.sort-option');
+      let seasonalData = [];
+      let currentSort = 'score';
+
+      /* ── Get Season Name ── */
+      function getCurrentSeasonName() {
+        const now = new Date();
+        const month = now.getMonth();
+        const year = now.getFullYear();
+        let season;
+        if (month >= 0 && month <= 2) season = 'WINTER';
+        else if (month >= 3 && month <= 5) season = 'SPRING';
+        else if (month >= 6 && month <= 8) season = 'SUMMER';
+        else season = 'FALL';
+        return `${season} ${year}`;
+      }
+
+      /* ── Render Spotlight Cards ── */
+      function renderSpotlight(animeList) {
+        if (!animeList || animeList.length < 3) return;
+
+        // Pick 3: highest score, highest popularity, random "hidden gem"
+        const byScore = [...animeList].sort((a, b) => (b.score || 0) - (a.score || 0));
+        const featured = byScore[0];
+        const anticipated = byScore[1];
+        const hiddenGem = byScore[Math.min(5, byScore.length - 1)];
+
+        spotlightGrid.innerHTML = `
+          <div class="spotlight-card blue reveal-scale" onclick='Modal.showAnime(${JSON.stringify(anticipated).replace(/'/g, "&#39;")})'>
+            <div class="spotlight-image"><img src="${anticipated.images?.jpg?.large_image_url || ''}" alt="" loading="lazy" /></div>
+            <div class="spotlight-badge">Most Anticipated</div>
+            <div class="spotlight-title">${anticipated.title}</div>
+            <div class="spotlight-score">${anticipated.score || 'N/A'}</div>
+          </div>
+          <div class="spotlight-card purple reveal-scale" data-stagger="1" onclick='Modal.showAnime(${JSON.stringify(featured).replace(/'/g, "&#39;")})'>
+            <div class="spotlight-image"><img src="${featured.images?.jpg?.large_image_url || ''}" alt="" loading="lazy" /></div>
+            <div class="crown-badge">👑</div>
+            <div class="spotlight-badge">Season MVP</div>
+            <div class="spotlight-title">${featured.title}</div>
+            <div class="spotlight-score">${featured.score || 'N/A'}</div>
+          </div>
+          <div class="spotlight-card pink reveal-scale" data-stagger="2" onclick='Modal.showAnime(${JSON.stringify(hiddenGem).replace(/'/g, "&#39;")})'>
+            <div class="spotlight-image"><img src="${hiddenGem.images?.jpg?.large_image_url || ''}" alt="" loading="lazy" /></div>
+            <div class="spotlight-badge">Hidden Gem</div>
+            <div class="spotlight-title">${hiddenGem.title}</div>
+            <div class="spotlight-score">${hiddenGem.score || 'N/A'}</div>
+          </div>
+        `;
+
+        Animations.initScrollReveal();
+      }
+
+      /* ── Sort Anime ── */
+      function sortAnime(data, sortBy) {
+        const sorted = [...data];
+        switch (sortBy) {
+          case 'score':
+            sorted.sort((a, b) => (b.score || 0) - (a.score || 0));
+            break;
+          case 'popularity':
+            sorted.sort((a, b) => (b.members || 0) - (a.members || 0));
+            break;
+          case 'episodes':
+            sorted.sort((a, b) => (b.episodes || 0) - (a.episodes || 0));
+            break;
+        }
+        return sorted;
+      }
+
+      /* ── Render Grid ── */
+      function renderGrid(data) {
+        seasonalGrid.innerHTML = data.map((anime, i) => {
+          const img = anime.images?.jpg?.image_url || 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400';
+          const genres = (anime.genres || []).slice(0, 2).map(g =>
+            `<span>${g.name}</span>`
+          ).join('');
+          const isAiring = anime.airing;
+
+          return `
+            <div class="card card-anime reveal-stagger" data-stagger="${i % 12}">
+              <div class="card-image">
+                <img src="${img}" alt="${anime.title}" loading="lazy" />
+                ${anime.rank ? `<div class="badge-rank">#${anime.rank}</div>` : ''}
+                ${anime.score ? `<div class="badge-score">⭐ ${anime.score}</div>` : ''}
+                ${isAiring ? `<div class="badge-live">Airing</div>` : ''}
+                <div class="overlay">
+                  <span class="btn btn-primary" style="pointer-events:none;">View Details</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-title">${anime.title}</div>
+                <div class="card-genres">${genres}</div>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        // Click handlers
+        seasonalGrid.querySelectorAll('.card-anime').forEach(card => {
+          card.addEventListener('click', () => {
+            const idx = [...seasonalGrid.querySelectorAll('.card-anime')].indexOf(card);
+            if (data[idx]) Modal.showAnime(data[idx]);
+          });
+        });
+
+        Animations.initScrollReveal();
+      }
+
+      /* ── Load Seasonal Anime ── */
+      async function loadSeasonal() {
+        try {
+          const data = await API.getSeasonalAnime(18);
+          if (data && data.data) {
+            seasonalData = data.data;
+
+            // Set season title
+            const seasonInfo = data.data[0];
+            if (seasonInfo) {
+              const seasonName = getCurrentSeasonName();
+              seasonTitle.textContent = `${seasonName} SEASON`;
+              seasonSubtitle.textContent = `${data.data.length} anime airing this season`;
+            }
+
+            renderSpotlight(data.data);
+            const sorted = sortAnime(data.data, currentSort);
+            renderGrid(sorted);
+          }
+        } catch (err) {
+          seasonalGrid.innerHTML = createErrorCard('Failed to load seasonal anime', 'location.reload()');
+        }
+      }
+
+      /* ── Sort Handler ── */
+      sortBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          sortBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentSort = btn.dataset.sort;
+          const sorted = sortAnime(seasonalData, currentSort);
+          renderGrid(sorted);
+        });
+      });
+
+      // Initial load
+      loadSeasonal();
+    });
+  </script>
+
+</body>
+</html>
